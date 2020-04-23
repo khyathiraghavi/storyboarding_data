@@ -14,7 +14,7 @@ class Crawler(object):
 
     def get_instructable_ids(self):
         for i in range(562):
-            page = "https://www.instructables.com/cooking/projects/?offset="+str(i*59)
+            page = "https://www.instructables.com/cooking/projects/?offset="+str(i)
             try:
                 os.system('wget -O index.html '+ page)
             except Exception as e:
